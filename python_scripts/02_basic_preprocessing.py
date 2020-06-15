@@ -15,7 +15,7 @@
 # ---
 
 # %% [markdown]
-# # Introduction to scikit-learn
+# # First model with scikit-learn
 #
 # ## Basic preprocessing and model fitting
 #
@@ -25,7 +25,7 @@
 # In particular we will highlight:
 # * the difference between numerical and categorical variables;
 # * the importance of scaling numerical variables;
-# * typical ways to deal categorical variables;
+# * typical ways to deal with categorical variables;
 # * how to train predictive models on different types of data;
 # * evaluate the performance of a model via cross-validation.
 #
@@ -112,11 +112,11 @@ data_numeric.head()
 # %% [markdown]
 # When building a machine learning model, it is important to leave out a
 # subset of the data which we can use later to evaluate the trained model.
-# The data used to fit a model a called training data while the one used to
-# assess a model are called testing data.
+# The data used to fit a model is called training data while the one used to
+# assess a model is called testing data.
 #
 # Scikit-learn provides an helper function `train_test_split` which will
-# split the dataset into a training and a testing set. It will ensure that
+# split the dataset into a training and a testing set. It will also ensure that
 # the data are shuffled randomly before splitting the data.
 
 # %%
@@ -153,7 +153,7 @@ print(f"The model {model.__class__.__name__} was trained in "
 
 # %% [markdown]
 # Let's ignore the convergence warning for now and instead let's try
-# to use our model to make some predictions on the first three records
+# to use our model to make some predictions on the first five records
 # of the held out test set:
 
 # %%
